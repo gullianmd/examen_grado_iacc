@@ -1,0 +1,9 @@
+{
+  "watch": ["src", "*.json"],
+  "ext": "ts,json",
+  "ignore": ["test/**/*.js"],
+  "exec": "tsx ./src/app.ts",
+  "restartable": true,
+  "delay": 1000,
+  "verbose": true
+}
