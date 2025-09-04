@@ -1,0 +1,24 @@
+
+services:
+  postgres-db:
+    image: postgres:15
+    container_name: postgres-db
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=usr_dev_pg
+      - POSTGRES_PASSWORD=pwd_dev_pg
+      - POSTGRES_DB=dev
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./docker/entrypoint.sql:/docker-entrypoint-initdb.d/init.sql
+    networks:
+      - ex-g-network
+    restart: unless-stopped
+
+volumes:
+  postgres_data:
+
+networks:
+  ex-g-network:
+    driver: bridge
