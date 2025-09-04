@@ -47,4 +47,11 @@ export default [
       },
     },
   },
+
+  {
+    files: ['**/__tests__/**/*.js', '**/*.test.js'],
+    rules: {
+      'no-undef': 'off',
+    },
+  },
 ];
