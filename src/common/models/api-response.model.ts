@@ -127,6 +127,8 @@ export function getStatusCodeFromResponse(response: ApiResponse): number {
       return 500;
     case 'NOT_ACCEPTABLE':
       return 406;
+    case 'RATE_LIMIT_EXCEEDED':
+      return 429;
     default:
       return 500; // Internal Server Error por defecto
   }
