@@ -135,10 +135,6 @@ Para reportar problemas o sugerir mejoras, por favor crear un issue en el reposi
 - Logs relevantes
 - Configuración del entorno
 
-## 📄 Licencia
-
-Este proyecto es desarrollado como parte del examen de grado. Todos los derechos reservados.
-
 ---
 
 **Autor**: Gullian Mardones Diaz |
